@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Vịnh Hạ Long - Quảng Ninh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://wyndhamgarden-sonaseavandon.com/wp-content/uploads/2024/10/khu-du-lich-ha-long-6.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+        }
+        .section-title {
+            color: #0d6efd;
+            border-bottom: 4px solid #0d6efd;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .card { transition: all 0.3s; cursor: pointer; }
+        .card:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        .carousel-item img { height: 520px; object-fit: cover; }
+        html { scroll-behavior: smooth; }
+
+        /* Ẩn/hiện trường tùy chỉnh */
+        #customDaysGroup { display: none; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">🌊 HA LONG BAY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diemthamquan">Điểm tham quan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#giathanh">Giá thành</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hinhanh">Hình ảnh</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dangky">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1 class="display-2 fw-bold">Vịnh Hạ Long - Quảng Ninh</h1>
+            <p class="lead fs-2">Kỳ quan thiên nhiên thế giới</p>
+            <a href="#gioithieu" class="btn btn-light btn-lg px-5 mt-3">KHÁM PHÁ NGAY</a>
+        </div>
+    </section>
+    <!-- Giới thiệu -->
+    <section id="gioithieu" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Vịnh Hạ Long - Di sản thế giới</h2>
+                    <p class="lead">Vịnh Hạ Long trở thành một trong 7 Kỳ quan Thiên nhiên mới của thế giới và được UNESCO hai lần công nhận là di sản thiên nhiên thế giới vào các ngày 17 tháng 12 năm 1994 và ngày 02 tháng 12 năm 2000. Vịnh Hạ Long có diện tích khoảng 1.553km², bao gồm 1.969 hòn đảo có tên và chưa có tên, vùng lõi của vịnh có diện tích 334km² với hơn 775 hòn đảo lớn nhỏ, phần lớn là đảo đá vôi karst tiêu biểu kiểu fengling và fengcong, hệ thống hang động phong phú. Trải qua 500 triệu năm kiến tạo là quá trình Vịnh Hạ Long trở thành nền tảng phát sinh các giá trị vô giá như sinh học, văn hóa khảo cổ và các giá trị nhân văn khác, qua lịch sử địa chất – địa mạo có ý nghĩa vô cùng quan trọng đối với khoa học địa mạo trên toàn cầu.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.vietnamtourism.gov.vn/en//images/2023/cnn5.jpg" class="img-fluid rounded shadow" alt="Toàn cảnh vịnh">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diemthamquan" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Các điểm tham quan nổi bật</h2>
+            <div class="row g-4">
+                <!-- Hang Sửng Sốt -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#modalSungSot">
+                        <img src="https://lejourneyhalongcruise.com/wp-content/uploads/2022/07/co-gi-ben-trong-hang-sung-sot-khien-ai-cung-phai-kinh-ngac-08-1641706550.jpeg" class="card-img-top" alt="Hang Sửng Sốt">
+                        <div class="card-body">
+                            <h5 class="card-title">Hang Sửng Sốt</h5>
+                            <p class="card-text">Hang động lớn nhất và đẹp nhất vịnh. Nhấp để xem thông tin chi tiết.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Đảo Ti Tốp -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#modalTitop">
+                        <img src="https://image.vietgoing.com/editor/image_ihm1636688889.jpg" class="card-img-top" alt="Đảo Ti Tốp">
+                        <div class="card-body">
+                            <h5 class="card-title">Đảo Ti Tốp</h5>
+                            <p class="card-text">Bãi biển có vẻ đẹp đọc đáo tại Việt Nam.Nhấp để xem thông tin chi tiết.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hang Đầu Gỗ -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow" data-bs-toggle="modal" data-bs-target="#modalDauGo">
+                        <img src="https://vivuhalong.com/wp-content/uploads/2024/02/hang-dau-go-11-1024x683-1.webp" class="card-img-top" alt="Hang Đầu Gỗ">
+                        <div class="card-body">
+                            <h5 class="card-title">Hang Đầu Gỗ</h5>
+                            <p class="card-text">Hang có nhũ đá khổng lồ, gắn với truyền thuyết lịch sử. Nhấp để xem thông tin chi tiết.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="giaca" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Bảng giá tham khảo</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="mb-3 text-primary">Giá Tour Du Thuyền</h4>
+                    <table class="table table-striped table-hover">
+                        <thead class="table-primary"><tr><th>Gói tour</th><th>Người lớn</th><th>Trẻ em (6-12)</th></tr></thead>
+                        <tbody>
+                            <tr><td>Tour 1 ngày</td><td>1.500.000 VNĐ</td><td>750.000 VNĐ</td></tr>
+                            <tr><td>Tour 2 ngày 1 đêm</td><td>3.200.000 VNĐ</td><td>1.600.000 VNĐ</td></tr>
+                            <tr><td>Tour 3 ngày 2 đêm</td><td>5.500.000 VNĐ</td><td>2.750.000 VNĐ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-3 text-primary">Phương tiện từ Hà Nội</h4>
+                    <table class="table table-striped table-hover">
+                        <thead class="table-primary"><tr><th>Loại</th><th>Giá vé một chiều</th></tr></thead>
+                        <tbody>
+                            <tr><td>Xe limousine</td><td>250.000 VNĐ</td></tr>
+                            <tr><td>Tàu cao tốc</td><td>450.000 VNĐ</td></tr>
+                            <tr><td>Máy bay Vân Đồn</td><td>1.200.000 VNĐ</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Hình ảnh tại vịnh Hạ Long</h2>
+            <div id="carouselHalong" class="carousel slide shadow-lg" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHalong" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselHalong" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselHalong" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselHalong" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i1-dulich.vnecdn.net/2020/07/06/vinh-4853-1594029669.jpg?w=0&h=0&q=100&dpr=1&fit=crop&s=brXgMZQsAXwJ_XznMzTE7g" class="d-block w-100" alt="Hạ Long buổi sáng">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/512/250/products/thiet-ke-chua-co-ten-21.jpg?v=1720518600897" class="d-block w-100" alt="Du thuyền">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://halongbay.com.vn/Data/files/B%E1%BB%A9c%20tranh%20thu%E1%BB%B7%20m%E1%BA%B7c_%20Nh%C3%A2n%20d%C3%A2n%203.png" class="d-block w-100" alt="Hoàng hôn">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://mia.vn/media/uploads/blog-du-lich/du-lich-ha-long-ngam-toan-canh-thanh-pho-ha-long-tu-tren-cao-01-1642633187.jpg" class="d-block w-100" alt="Toàn cảnh vịnh">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHalong" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHalong" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </section>
+    <section id="dangky" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center mb-5">Đăng ký tư vấn & đặt tour</h2>
+                    <form id="formDangKy" class="needs-validation" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Họ và tên <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" required placeholder="Nhập họ tên đầy đủ">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Ngày sinh <span class="text-danger">*</span></label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Gói tour quan tâm <span class="text-danger">*</span></label>
+                                <select class="form-select" id="tourPackage" required onchange="toggleCustomDays()">
+                                    <option value="">Chọn gói...</option>
+                                    <option>Tour 1 ngày</option>
+                                    <option>Tour 2 ngày 1 đêm</option>
+                                    <option>Tour 3 ngày 2 đêm</option>
+                                    <option>Tùy chỉnh</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6" id="customDaysGroup">
+                                <label class="form-label fw-bold">Số ngày mong muốn</label>
+                                <input type="number" class="form-control" id="customDays" min="1" placeholder="Ví dụ: 4" step="1">
+                                <small class="text-muted">Chỉ áp dụng khi chọn "Tùy chỉnh"</small>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Số lượng vé người lớn</label>
+                                <input type="number" class="form-control" min="0" value="0" placeholder="0" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Số lượng vé trẻ em (6-12 tuổi)</label>
+                                <input type="number" class="form-control" min="0" value="0" placeholder="0" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" required placeholder="example@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Số điện thoại <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" required placeholder="0123 456 789">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Ghi chú thêm (yêu cầu đặc biệt, phòng riêng, ăn chay, v.v.)</label>
+                                <textarea class="form-control" rows="4" placeholder="Ví dụ: Muốn có hướng dẫn viên nói tiếng Anh, ưu tiên cabin view biển..."></textarea>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">GỬI ĐẶT TOUR NGAY</button>
+                            <p class="mt-3 text-muted small">Chúng tôi sẽ liên hệ xác nhận trong vòng 24 giờ qua số điện thoại hoặc email bạn cung cấp.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer - CĂN TRÁI TOÀN BỘ -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-start">
+            <p class="mb-1"><strong>Thông tin liên hệ:</strong> 0989 123 456</p>
+            <p>Địa chỉ: Vinpearl Resort & Spa Hạ Long<br>Bãi Cháy, Thành phố Hạ Long, Quảng Ninh</p>
+            <ul class="list-unstyled mt-3">
+                <li>Nguyễn Ngọc Khánh Phương</li>
+                <li>Trương Ngọc Minh</li>
+                <li>Tô Ninh Thanh Uyên</li>
+                <li>Lê Khánh Như</li>
+            </ul>
+            <p class="mt-2"><strong>Lớp:</strong> 12N</p>
+        </div>
+    </footer>
+
+    <!-- Modal giữ nguyên như cũ -->
+    <div class="modal fade" id="modalSungSot" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Hang Sửng Sốt – Kỳ quan trong lòng vịnh</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="https://statics.vinpearl.com/hang-sung-sot-3_1627633612.jpeg" class="img-fluid rounded mb-3" alt="Hang Sửng Sốt">
+                            <img src="https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/adhkld-1754033894049.jpg" class="img-fluid rounded" alt="View từ hang">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Thông tin nổi bật</h5>
+                            <p>Hang Sửng Sốt là một trong những hang động đẹp và hoành tráng nhất trên Vịnh Hạ Long. Hang có diện tích 12.200m², miệng hang cách mực nước biển khoảng 25m và chia thành 2 ngăn như nhà hát Opera khổng lồ. Trần hang là mái vòm cong với vệt lõm đều mịn, vô số “chùm đèn” nhũ đá long lanh, cùng tượng đá, voi đá, hải cẩu, mâm xôi, hoa lá… tất cả như chuyển động trong thế giới huyền ảo. Ở đỉnh cao nhất của động, bất ngờ một khu “vườn thượng uyển” mở ra trước mắt, có hồ nước trong vắt, muôn loài cây như si, vạn tuế, đa cổ thụ cùng nhiều loài chim sinh sống. Quả thực tới đây du khách không chỉ trầm trồ vì vẻ đẹp kỳ lạ mà còn thán phục sự hùng vĩ, tuyệt diệu mà thiên nhiên đã ban tặng cho con người. Hang Sửng Sốt là một trong những hang động karst điển hình, có giá trị khoa học cao, được người Pháp phát hiện vào năm 1901.Đầu năm 2012, hang Sửng Sốt được Hiệp hội các văn phòng và môi giới du lịch Czech bình chọn là 1 trong top 10 hang động đẹp nhất thế giới.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTitop" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Đảo Ti Tốp – Bãi biển + View 360°</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="https://dulichthesinhtourist.com/upload/2023-03-20/u5_toan-canh-dao-titop.jpg" class="img-fluid rounded mb-3" alt="Đảo Ti Tốp">
+                            <img src="https://www.homepaylater.vn/static/e6ed911d8955b5383d820804cfef579e/2f28f/8_tro_choi_giup_tang_su_gan_ket_hon_bao_gio_het_040c098d64.webp" class="img-fluid rounded" alt="Leo núi">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Thông tin nổi bật</h5>
+                            <p>Đảo Ti Tốp nằm trong khu vực vịnh Hạ Long, cách cảng Tuần Châu khoảng 12km và cách Bãi Cháy khoảng 7 – 8km về hướng Đông Nam. Hòn đảo này tạo lạc tại vị trí vô cùng đắc địa, lưng tựa vịnh Cửa Lục, phía trước là hang Sửng Sốt có đảo Bồ Hòn, bên phải là hòn Dầm Nam. Hòn đảo này gây ấn tượng bởi hình dáng độc lạ, tựa tư thế “nằm nghiêng” với một mặt dốc đứng, một mặt nghiêng. Đảo Ti Tốp trước đây đã được biết đến với nhiều tên gọi khác nhau như đảo Cát Nàng hay đảo Hồng Thập Tự .Vào ngày 22/1/1962, chủ tịch Hồ Chí Minh cùng nhà du hành vũ trụ Liên Xô Gherman Titop đã đến thăm đảo. Để kỷ niệm sự kiện quan trọng này và ghi dấu mối quan hệ hữu nghị giữa hai nước, Bác Hồ đã quyết định đổi tên đảo thành Ti Tốp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalDauGo" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Hang Đầu Gỗ – Hang gỗ lớn nhất</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="https://sun-ecommerce-cdn.azureedge.net/ecommerce/service-sites/asset/SunParadiseLandQuangNinh/google-doc/post_id_12380/AD_4nXeNCihoqfTGMcStS6_bb7QKYFwafzz4EBesnFS4RAx5ZgZ26pv1qUWkFb9MrOzg5YvVebU7eMZD6PgxAHIvDFptoNI8tED8zH9ImJVs5izogrLNf1HbO5mOgzaXMRWO4wna4ltkuzbHsibwxwvbzYSzrJBk0moDo9PJEAHIoepTxiE55Ag.webp" class="img-fluid rounded mb-3" alt="Hang Đầu Gỗ">
+                            <img src="https://cms.mobihome.vn/Data/Sites/1/media/hang-dau-go-05.jpg" class="img-fluid rounded" alt="Nhũ đá">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Thông tin nổi bật</h5>
+                          <p>Hang Đầu Gỗ rộng khoảng 5000m2, nằm trên độ cao 27m so với mực nước biển. Từ phía xa nhìn lại, cửa hang có màu xanh lam hình một con sứa biển, qua 90 bậc đá xây ta tới cửa hang. Vòm hang cao khoảng 25m, từ trên cao ấy hàng trăm nhũ đá khổng lồ rủ xuống như một dòng thác kỳ lạ. Hang động được chia làm ba ngăn chính. Ngăn phía ngoài có hình vòm cuốn tràn trề ánh sáng tự nhiên, trần hang là một bức “tranh sơn dầu” khổng lồ, mô tả phong cảnh thiên nhiên hoang sơ với những rừng măng đá, nhũ đá nhiều mầu tạo nên nhiều hình thù kỳ lạ. Đứng dưới vòm hang ta có cảm giác như đang đứng giữa một toà lâu đài cổ kính, có lối kiến trúc đồ sộ và hùng vĩ. Tận cùng hang là một chiếc giếng tiên bốn mùa nước ngọt trong vắt, chảy tràn trề.Hang Đầu Gỗ như tập trung được một quần thể kiến trúc cổ xưa, Vẻ đẹp hoang sơ và tĩnh mịch với nhiều cột đá, trụ đá, măng đá nhỏ nhắn, cao vút như muốn vươn tận trời xanh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Chức năng hiện/ẩn trường số ngày khi chọn "Tùy chỉnh"
+        function toggleCustomDays() {
+            const packageSelect = document.getElementById('tourPackage');
+            const customGroup = document.getElementById('customDaysGroup');
+            if (packageSelect.value === 'Tùy chỉnh') {
+                customGroup.style.display = 'block';
+                document.getElementById('customDays').setAttribute('required', 'required');
+            } else {
+                customGroup.style.display = 'none';
+                document.getElementById('customDays').removeAttribute('required');
+            }
+        }
+
+        // Submit form
+        document.getElementById('formDangKy').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                alert('Chúng tôi đã nhận thông tin đăng ký!\nBạn sẽ được liên hệ qua số điện thoại trong 24h tới để được tư vấn.');
+                this.reset();
+                // Reset trường tùy chỉnh nếu cần
+                document.getElementById('customDaysGroup').style.display = 'none';
+            } else {
+                this.classList.add('was-validated');
+            }
+        });
+    </script>
+</body>
+</html>
